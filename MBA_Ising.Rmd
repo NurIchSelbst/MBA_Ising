@@ -1,0 +1,48 @@
+---
+title: "MBA_Ising"
+author: "José Salvador Balbuena González"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+    latex_engine: xelatex
+---
+
+
+
+```{r}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center"
+)
+
+# Manipulación y formato de datos
+library(dplyr)
+library(reshape2)
+
+# Visualización de datos y matrices
+library(ggplot2)
+library(pheatmap)
+library(corrplot)
+
+# Formato de tablas elegantes
+library(kableExtra)
+
+# Análisis econométrico y series de tiempo (Tests de validación)
+library(tseries) # Para test de Ljung-Box
+library(lmtest)  # Para test de Breusch-Pagan y Ramsey RESET
+library(FinTS)   # Para test de ARCH-LM
+
+# Simulación estocástica y Teoría de Matrices Aleatorias (RMT)
+# library(fractionalBM) Para el Movimiento Browniano Fraccionario
+library(RMT4DS)       # Para la densidad teórica de Marchenko-Pastur
+```
+
+### Movimiento browniano geométrico
+
+
+
+
